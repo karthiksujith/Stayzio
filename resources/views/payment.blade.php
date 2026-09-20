@@ -20,19 +20,60 @@
             font-family: Arial, sans-serif;
             background: #f5f7fa;
             color: #333;
-            min-height: 100vh;
-                
+            min-height: 100vh;   
+            padding: 0;
+            margin: 0;
+        }
+        .navbar {
+            background: #0f172a;
+            color: white;
+            padding: 1px 30px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+        }
 
-            padding: 30px 15px;
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0;
+
+            color: white;
+            text-decoration: none;
+        }
+
+        .brand img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        .brand h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .nav-links{
+            display:flex;
+            gap:20px;
+        }
+
+        .nav-links a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .nav-links a:hover{
+            color:#38bdf8;
         }
 
         .payment-container {
             width: 100%;
             max-width: 900px;
-
+            
+            margin: 40px auto;
+            
             background: white;
 
             border-radius: 15px;
@@ -361,6 +402,15 @@
 
 
 <body>
+    <div class="navbar">
+         <a href="{{ route('home') }}" class="brand">
+            <img src="{{ asset('images/logo.png') }}" alt="Stayzio Logo">
+            <h2>Stayzio</h2>
+        </a>
+        <div class="nav-links">
+            <a href="{{ route('home') }}">Home</a>
+        </div>
+    </div>
 
 
 <div class="payment-container">

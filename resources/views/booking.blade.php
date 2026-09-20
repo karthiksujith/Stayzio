@@ -34,23 +34,23 @@
         }
 
         .brand {
-    display: flex;
-    align-items: center;
-    gap: 0;
-    color: white;
-    text-decoration: none;
-}
+            display: flex;
+            align-items: center;
+            gap: 0;
+            color: white;
+            text-decoration: none;
+        }
 
-.brand img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
+        .brand img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
 
-.brand h2 {
-    margin: 0;
-    font-size: 24px;
-}
+        .brand h2 {
+            margin: 0;
+            font-size: 24px;
+        }
 
 
         .nav-links{

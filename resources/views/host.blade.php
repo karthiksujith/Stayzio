@@ -19,7 +19,7 @@
        .navbar{
             background: #0f172a;
             color: white;
-            padding: 15px 30px;
+            padding: 1px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
